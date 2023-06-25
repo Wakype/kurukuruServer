@@ -7,7 +7,7 @@ const process = require('process');
 const dotenv = require('dotenv').config();
 
 const basename = path.basename(__filename);
-const env = process.env.NODE_ENV || 'development';
+const env = process.env.NODE_ENV || 'production';
 const config = require(__dirname + '/../config/database')[env];
 const db = {};
 
